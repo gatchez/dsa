@@ -1,0 +1,35 @@
+# Build artifacts
+build/
+dist/
+bin/
+lib/
+*.o
+*.a
+*.so
+*.dylib
+*.exe
+*.dll
+
+# CMake
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+CTestTestfile.cmake
+Makefile
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+*.pro.user
+
+# Dependencies
+dependencies/
+third_party/
+
+# Output files
+*.log
+compile_commands.json
