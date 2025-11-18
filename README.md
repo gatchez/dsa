@@ -30,7 +30,7 @@ dsa/
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/dsa.git
+git clone https://github.com/gatchez/dsa.git
 cd dsa
 
 # Create build directory and configure
