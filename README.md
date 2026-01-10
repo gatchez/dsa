@@ -13,8 +13,14 @@ dsa/
 │   ├── docs/                 # Documentation
 │   ├── build/                # Build output
 │   └── CMakeLists.txt
+├── LinkedList/               # LinkedList data structure project
+│   ├── src/                  # Source files
+│   ├── include/              # Header files
+│   ├── docs/                 # Documentation
+│   └── CMakeLists.txt
 ├── CMakeLists.txt            # Root CMake configuration
 ├── README.md                 # This file
+├── LICENSE                   # MIT License
 └── .gitignore                # Git ignore rules
 ```
 
@@ -47,8 +53,8 @@ ctest
 
 ## Data Structures
 
-- [ ] Array
-- [ ] Linked List
+- [x] Array
+- [x] Linked List
 - [ ] Stack
 - [ ] Queue
 - [ ] Tree
