@@ -20,6 +20,7 @@ enable_testing()
 # Add subdirectories for each data structure project
 add_subdirectory(Array)
 add_subdirectory(LinkedList)
+add_subdirectory(Stack)
 
 # Project summary
 message(STATUS "========================================")

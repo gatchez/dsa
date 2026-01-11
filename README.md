@@ -11,11 +11,17 @@ dsa/
 │   ├── include/              # Header files
 │   ├── tests/                # Unit tests
 │   ├── docs/                 # Documentation
-│   ├── build/                # Build output
 │   └── CMakeLists.txt
 ├── LinkedList/               # LinkedList data structure project
 │   ├── src/                  # Source files
 │   ├── include/              # Header files
+│   ├── tests/                # Unit tests
+│   ├── docs/                 # Documentation
+│   └── CMakeLists.txt
+├── Stack/                    # Stack data structure project
+│   ├── src/                  # Source files
+│   ├── include/              # Header files
+│   ├── tests/                # Unit tests
 │   ├── docs/                 # Documentation
 │   └── CMakeLists.txt
 ├── CMakeLists.txt            # Root CMake configuration
@@ -55,7 +61,7 @@ ctest
 
 - [x] Array
 - [x] Linked List
-- [ ] Stack
+- [x] Stack
 - [ ] Queue
 - [ ] Tree
 - [ ] Graph
