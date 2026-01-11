@@ -62,9 +62,10 @@ This LinkedList is part of the DSA (Data Structures and Algorithms) library, off
 
 ### Building
 
-1. Navigate to the LinkedList directory:
+1. Cloning the repository:
    ```bash
-   cd LinkedList
+   git clone https://github.com/gatchez/dsa.git
+   cd dsa
    ```
 
 2. Create build directory:
@@ -87,7 +88,7 @@ This LinkedList is part of the DSA (Data Structures and Algorithms) library, off
 ### Basic Example
 
 ```cpp
-#include "../include/LinkedList.h"
+#include "LinkedList.h"
 #include <iostream>
 
 using namespace dsa;
@@ -123,7 +124,7 @@ int main() {
 ### Search and Sort Example
 
 ```cpp
-#include "../include/LinkedList.h"
+#include "LinkedList.h"
 #include <iostream>
 
 using namespace dsa;
@@ -155,7 +156,7 @@ int main() {
 ### Working with Custom Types
 
 ```cpp
-#include "../include/LinkedList.h"
+#include "LinkedList.h"
 #include <string>
 
 using namespace dsa;
@@ -318,13 +319,18 @@ The LinkedList implementation includes comprehensive tests covering:
 - Memory management
 - Custom data types
 
-### Running Tests
+### Execution
+
+To run the LinkedList demo:
 
 ```bash
-cd LinkedList/build
-make linkedlist_demo
-./bin/linkedlist_demo.exe
+# From the project root
+cd build
+make LinkedList_demo
+./bin/LinkedList_demo.exe
 ```
+
+The executable is located at `dsa/build/bin/LinkedList_demo.exe`
 
 ## Dependencies
 

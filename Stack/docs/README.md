@@ -55,7 +55,7 @@ This Stack is part of the DSA (Data Structures and Algorithms) library, designed
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/dsa.git
+   git clone https://github.com/gatchez/dsa.git
    cd dsa
    ```
 
@@ -81,7 +81,7 @@ The Stack library will be built as part of the overall DSA project.
 ### Basic Example
 
 ```cpp
-#include "../include/Stack.h"
+#include "Stack.h"
 #include <iostream>
 
 using namespace dsa;
@@ -113,7 +113,7 @@ int main() {
 ### Working with Custom Types
 
 ```cpp
-#include "../include/Stack.h"
+#include "Stack.h"
 #include <string>
 
 using namespace dsa;
@@ -136,7 +136,7 @@ int main() {
 ### Error Handling
 
 ```cpp
-#include "../include/Stack.h"
+#include "Stack.h"
 #include <iostream>
 #include <stdexcept>
 
@@ -230,15 +230,18 @@ The Stack implementation includes comprehensive tests covering:
 - Multiple data types (int, string, char)
 - Edge cases and boundary conditions
 
-### Running Tests
+### Execution
+
+To run the Stack demo:
 
 ```bash
+# From the project root
 cd build
 make stack_demo
 ./bin/stack_demo.exe
 ```
 
-Expected output includes successful completion of all test cases with proper exception handling.
+The executable is located at `dsa/build/bin/stack_demo.exe`
 
 ## Dependencies
 

@@ -59,9 +59,10 @@ This Array is part of the DSA (Data Structures and Algorithms) library, serving 
 
 ### Building
 
-1. Navigate to the Array directory:
+1. Clone the repository
    ```bash
-   cd Array
+   git clone https://github.com/gatchez/dsa.git
+   cd dsa
    ```
 
 2. Create build directory:
@@ -84,7 +85,7 @@ This Array is part of the DSA (Data Structures and Algorithms) library, serving 
 ### Basic Example
 
 ```cpp
-#include "../include/Array.h"
+#include "Array.h"
 #include <iostream>
 
 using namespace dsa;
@@ -118,7 +119,7 @@ int main() {
 ### Sorting Example
 
 ```cpp
-#include "../include/Array.h"
+#include "/Array.h"
 #include <iostream>
 
 using namespace dsa;
@@ -149,7 +150,7 @@ int main() {
 ### Working with Custom Types
 
 ```cpp
-#include "../include/Array.h"
+#include "Array.h"
 #include <string>
 
 using namespace dsa;
@@ -324,13 +325,18 @@ The Array implementation includes comprehensive tests covering:
 - Memory management and resizing
 - Custom data types
 
-### Running Tests
+### Execution
+
+To run the Array demo:
 
 ```bash
-cd Array/build
+# From the project root
+cd build
 make array_demo
 ./bin/array_demo.exe
 ```
+
+The executable is located at `dsa/build/bin/array_demo.exe`
 
 ## Dependencies
 

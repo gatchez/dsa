@@ -100,7 +100,7 @@ dsa/
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/yourusername/dsa.git
+   git clone https://github.com/gatchez/dsa.git
    cd dsa
    ```
 
@@ -163,6 +163,20 @@ cmake -G Xcode ..
 cmake --build . --config Release
 ```
 
+## Execution
+
+After building the project, the demo executables for each data structure are located in `dsa/build/bin/`. You can run them directly:
+
+- **Array Demo**: `dsa/build/bin/array_demo.exe`
+- **LinkedList Demo**: `dsa/build/bin/LinkedList_demo.exe`
+- **Stack Demo**: `dsa/build/bin/stack_demo.exe`
+
+Example:
+```bash
+# From the project root
+./build/bin/array_demo.exe
+```
+
 ## Usage
 
 Each data structure is designed as a standalone module. Include the appropriate headers and link against the built libraries.
@@ -170,7 +184,7 @@ Each data structure is designed as a standalone module. Include the appropriate 
 ### Example: Using the Stack
 
 ```cpp
-#include "Stack/include/Stack.h"
+#include "Stack.h"
 #include <iostream>
 
 using namespace dsa;
