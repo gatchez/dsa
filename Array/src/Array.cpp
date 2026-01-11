@@ -82,7 +82,7 @@ namespace dsa {
     T Array<T>::pop() {
         /*
         Algorithm to remove and return the last element:
-            1. check if aeeay is empty
+            1. check if array is empty
             2. decrement size
             3. return data[size]
         */
