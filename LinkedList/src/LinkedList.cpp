@@ -8,7 +8,7 @@ namespace dsa {
     LinkedList<T>::LinkedList() {
         head = tail = nullptr;
         count = 0;
-    };
+    }
 
     template<typename T>
     LinkedList<T>::~LinkedList() {
@@ -30,7 +30,7 @@ namespace dsa {
        }
        head = tail = nullptr;
        count = 0;
-    };
+    }
 
     template<typename T>
     void LinkedList<T>::insertAtBeginning(T value) {
@@ -51,7 +51,7 @@ namespace dsa {
             head = newNode;
         }
         count++;
-    };
+    }
 
     template<typename T>
     void LinkedList<T>::insertAtEnd(T value) {
@@ -87,7 +87,7 @@ namespace dsa {
         tail = tail->next;
         count++;
        }       
-    };
+    }
 
     template<typename T>
     void LinkedList<T>::insertAt(int index, T value) {
@@ -128,7 +128,7 @@ namespace dsa {
         }
         count++;
        }
-    };
+    }
 
     template<typename T>
     void LinkedList<T>::set(int index, T value) {
@@ -152,7 +152,7 @@ namespace dsa {
         return;
        }
        current->data = value;
-    };
+    }
 
     template<typename T>
     T LinkedList<T>::get(int index) {
@@ -175,7 +175,7 @@ namespace dsa {
         throw std::out_of_range("Index out of range");
        }
        return current->data;
-    };
+    }
 
     template<typename T>
     T LinkedList<T>::removeFirst() {
@@ -213,7 +213,7 @@ namespace dsa {
 
        return data;
        }
-    };
+    }
 
     template<typename T>
     T LinkedList<T>::removeLast() {
@@ -254,7 +254,7 @@ namespace dsa {
 
         return data;
        }
-    };
+    }
 
     template<typename T>
     T LinkedList<T>::removeAt(int index) {
@@ -298,7 +298,7 @@ namespace dsa {
 
         return data;
        }
-    };
+    }
 
     template<typename T>
     int LinkedList<T>::linearSearch(T value) {
@@ -321,7 +321,7 @@ namespace dsa {
             index++;
         }
         return -1;
-    };
+    }
 
     template<typename T>
     void LinkedList<T>::bubbleSort() {
@@ -350,13 +350,13 @@ namespace dsa {
             current = current->next;
         }
        } while (swapped);
-    };
+    }
 
     template<typename T>
-    int LinkedList<T>::getSize() { return count; };
+    int LinkedList<T>::getSize() { return count; }
 
     template<typename T>
-    bool LinkedList<T>::isEmpty() { return count == 0; };
+    bool LinkedList<T>::isEmpty() { return count == 0; }
 
     template<typename T>
     void LinkedList<T>::reverse() {
@@ -380,7 +380,7 @@ namespace dsa {
             current = next;
          }
          head = prev;
-    };
+    }
 
     template<typename T>
     void LinkedList<T>::print() {
@@ -397,7 +397,7 @@ namespace dsa {
         std::cout << current->data << " ";
         current = current->next;
        }
-    };
+    }
 }
 
 // Explicit template instantiation for common types

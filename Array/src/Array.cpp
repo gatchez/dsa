@@ -8,12 +8,12 @@ namespace dsa {
         capacity = 10; // initial capacity
         size = 0; // number of elements
         data = new T[capacity]; // allocate heap memory
-    };
+    }
 
     template<typename T>
     Array<T>::~Array() {
         delete[] data; // free heap memory
-    };
+    }
 
     template<typename T>
     void Array<T>::resize() {
@@ -34,7 +34,7 @@ namespace dsa {
        }
        delete[] data;
        data = newData;
-    };
+    }
 
     template<typename T>
     void Array<T>::shiftRight(int index) {
@@ -47,7 +47,7 @@ namespace dsa {
          {
             data[i + 1] = data[i];
          }
-    };
+    }
 
     template<typename T>
     void Array<T>::shiftLeft(int index) {
@@ -60,7 +60,7 @@ namespace dsa {
         {
             data[i] = data[i + 1];
         }
-    };
+    }
 
     template<typename T>
     void Array<T>::push(T value) {
@@ -76,7 +76,7 @@ namespace dsa {
         resize();
        } 
        data[size++] = value;
-    };
+    }
 
     template<typename T>
     T Array<T>::pop() {
@@ -90,7 +90,7 @@ namespace dsa {
             throw std::out_of_range("Cannot pop from empty array");
        }
        return data[--size];
-    };
+    }
 
     template<typename T>
     void Array<T>::insert(int index, T value) {
@@ -111,7 +111,7 @@ namespace dsa {
        shiftRight(index);
        data[index] = value;
         size++;
-    };
+    }
 
     template<typename T>
     T Array<T>::remove(int index) {
@@ -129,7 +129,7 @@ namespace dsa {
        shiftLeft(index);
         size--;
         return temp;
-    };
+    }
 
     template<typename T>
     T Array<T>::get(int index) {
@@ -137,7 +137,7 @@ namespace dsa {
             throw std::out_of_range("Invalid index");
         }
         return data[index];
-    };
+    }
 
     template<typename T>
     void Array<T>::set(int index, T value) {
@@ -145,7 +145,7 @@ namespace dsa {
             throw std::out_of_range("Invalid index");
         }
         data[index] = value;
-    };
+    }
 
     template<typename T>
     int Array<T>::linearSearch(T value) {
@@ -159,7 +159,7 @@ namespace dsa {
             if (data[i] == value) { return i;}
        }
         return -1;
-    };
+    }
 
     template<typename T>
     int Array<T>::binarySearch(T value) {
@@ -189,7 +189,7 @@ namespace dsa {
             }
        }
        return -1;
-    };
+    }
 
     template<typename T>
     void Array<T>::bubbleSort() {
@@ -209,7 +209,7 @@ namespace dsa {
                 }
             }
         }
-    };
+    }
 
     template<typename T>
     void Array<T>::insertionSort() {
@@ -230,7 +230,7 @@ namespace dsa {
         }
         data[j + 1] = key; // insert at correct position
         }
-    };
+    }
 
     template<typename T>
     int Array<T>::partition(int low, int high) {
@@ -265,7 +265,7 @@ namespace dsa {
         data[high] = temp;
 
         return i + 1; // Return pivot index
-    };
+    }
 
     template<typename T>
     void Array<T>::quickSortHelper(int low, int high) {
@@ -277,7 +277,7 @@ namespace dsa {
             quickSortHelper(pi + 1, high);   // Sort right partition
         }
         
-    };
+    }
 
     template<typename T>
     void Array<T>::quickSort() {
@@ -290,7 +290,7 @@ namespace dsa {
         if (size > 1) {
             quickSortHelper(0, size - 1);
         }
-    };
+    }
 
     template<typename T>
     void Array<T>::reverse() {
@@ -310,22 +310,22 @@ namespace dsa {
         left++;
         right--;
        }
-    };
+    }
 
     template<typename T>
     int Array<T>::getSize() {
         return size;
-    };
+    }
 
     template<typename T>
     int Array<T>::getCapacity() {
         return capacity;
-    };
+    }
 
     template<typename T>
     bool Array<T>::isEmpty() {
         return size == 0;
-    };
+    }
 
     template<typename T>
     void Array<T>::print() {
@@ -334,7 +334,7 @@ namespace dsa {
             std::cout << data[i] << " ";
         }
         std::cout << std::endl;
-    };
+    }
 }
 
 // Explicit template instantiation for common types

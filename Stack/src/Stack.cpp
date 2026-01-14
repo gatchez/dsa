@@ -6,7 +6,7 @@ namespace dsa {
     template<typename T>
     Stack<T>::Stack() : topIndex(-1) {
         // stack is default constructed
-    };
+    }
 
     template<typename T>
     void Stack<T>::push(T value) {
@@ -17,7 +17,7 @@ namespace dsa {
         */
        stack.push(value);
        topIndex = stack.getSize() - 1;
-    };
+    }
 
     template<typename T>
     T Stack<T>::pop() {
@@ -37,7 +37,7 @@ namespace dsa {
        T val = stack.pop();
        topIndex = stack.getSize() - 1;
        return val;
-    };
+    }
 
     template<typename T>
     T Stack<T>::top() { 
@@ -45,7 +45,7 @@ namespace dsa {
             throw std::out_of_range("The stack is empty");
         }
         return stack.get(topIndex); 
-    };
+    }
 
     template<typename T>
     int Stack<T>::size() { return stack.getSize(); };
@@ -60,7 +60,7 @@ namespace dsa {
             std::cout << stack.get(i) << " ";
         }
         std::cout << std::endl;
-    };
+    }
 }
 
 // Explicit template instantiation for common types
