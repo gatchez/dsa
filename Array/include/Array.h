@@ -15,21 +15,20 @@ namespace dsa {
             void quickSortHelper(int low, int high); // recursive quick sort helper
 
         public:
-        // constructor and destructor
-            Array();
-            ~Array();
+            Array(); // Constructor
+            ~Array(); // Destructor
 
             // core array operations
-            void push(T value);
-            T pop();
-            void insert(int index, T value);
-            T remove(int index);
-            T get(int index);
-            void set(int index, T value);
+            void push(T value); // Adds element at the end of the array
+            T pop(); // Removes and returns the last element of the array
+            void insert(int index, T value); // Inserts element at specified index
+            T remove(int index); // Removes and returns element at specified index
+            T get(int index); // Returns element at specified index
+            void set(int index, T value); // Modifies element at specified index
 
             // Search algorithms -> returns index of the found element or -1 if not found
-            int linearSearch(T value);
-            int binarySearch(T value);
+            int linearSearch(T value); // Returns index of the found element or -1 if not found
+            int binarySearch(T value); // Returns index of the found element or -1 if not found
 
             // Sorting algorithms -> sorts array in place
             void bubbleSort(); 
@@ -37,10 +36,10 @@ namespace dsa {
             void quickSort();
 
             // utility methods
-            int getSize();
-            int getCapacity();
-            bool isEmpty();
+            int getSize(); // Returns the current number of elements in the array
+            int getCapacity(); // Returns the current capacity of the array
+            bool isEmpty(); // Returns true if array is empty, false otherwise
             void reverse(); // reverses the array in place
-            void print();
+            void print(); // Outputs all the elements in the array
     };
 }
