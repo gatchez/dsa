@@ -52,6 +52,12 @@ dsa/
 │   ├── tests/
 │   ├── docs/
 │   └── CMakeLists.txt
+├── Queue/                    # Queue (FIFO) using Array
+│   ├── include/
+│   ├── src/
+│   ├── tests/
+│   ├── docs/
+│   └── CMakeLists.txt
 ├── CMakeLists.txt            # Root build configuration
 ├── README.md                 # Project documentation
 ├── LICENSE                   # MIT License
@@ -65,10 +71,7 @@ dsa/
 - **[Array](Array/docs/README.md)**: Dynamic array with automatic resizing
 - **[LinkedList](LinkedList/docs/README.md)**: Singly linked list implementation
 - **[Stack](Stack/docs/README.md)**: LIFO stack using dynamic array
-
-### 🚧 In Progress
-
-- [ ] Queue: FIFO queue implementation
+- **[Queue](Queue/docs/README.md)**: FIFO queue using dynamic array
 - [ ] Tree: Binary search tree and variants
 - [ ] Graph: Graph representations and algorithms
 - [ ] Hash Table: Hash-based dictionary
@@ -211,6 +214,7 @@ For detailed usage examples, see the documentation for each data structure:
 - [Array Usage](Array/docs/README.md#usage)
 - [LinkedList Usage](LinkedList/docs/README.md#usage)
 - [Stack Usage](Stack/docs/README.md#usage)
+- [Queue Usage](Queue/docs/README.md#usage)
 
 ## Testing
 
